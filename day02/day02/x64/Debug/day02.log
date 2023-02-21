@@ -1,0 +1,6 @@
+﻿  day02.cpp
+C:\work\C\day02\day02\day02.cpp(647,16): warning C4101: 'hundered' :참조되지 않은 지역 변수입니다.
+C:\work\C\day02\day02\day02.cpp(647,26): warning C4101: 'ten' :참조되지 않은 지역 변수입니다.
+C:\work\C\day02\day02\day02.cpp(647,31): warning C4101: 'one' :참조되지 않은 지역 변수입니다.
+C:\work\C\day02\day02\day02.cpp(647,6): warning C4101: 'thousand' :참조되지 않은 지역 변수입니다.
+  day02.vcxproj -> C:\work\C\day02\x64\Debug\day02.exe
