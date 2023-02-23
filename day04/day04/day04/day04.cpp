@@ -6,10 +6,10 @@
 //	int size = 0;
 //	int i;
 //
-//	printf("¹è¿­ÀÇ ¹ÙÀÌÆ® Å©±â : %d\n", sizeof(arr));
+//	printf("ë°°ì—´ì˜ ë°”ì´íŠ¸ í¬ê¸° : %d\n", sizeof(arr));
 //
 //	size = sizeof(arr) / sizeof(arr[0]);
-//	printf("¹è¿­ÀÇ Å©±â : %d\n", size);
+//	printf("ë°°ì—´ì˜ í¬ê¸° : %d\n", size);
 //
 //	for (i = 0; i < size; i++)
 //		arr[i] = 0;
@@ -209,11 +209,11 @@
 //	printf("data = ");
 //	print_array(data, size);
 //
-//	printf("Ã£À» °ª(Å°) ?");
+//	printf("ì°¾ì„ ê°’(í‚¤) ?");
 //	scanf("%d", &key);
 //	for (i = 0; i < size; i++) {
 //		if (data[i] == key)
-//			printf("Ã£Àº ¿ø¼ÒÀÇ ÀÎµ¦½º : %d\n", i);
+//			printf("ì°¾ì€ ì›ì†Œì˜ ì¸ë±ìŠ¤ : %d\n", i);
 //	}
 //}
 
@@ -235,7 +235,7 @@
 
 
 
-// ===== 1¹ø ¿¬½À¹®Á¦ =====
+// ===== 1ë²ˆ ì—°ìŠµë¬¸ì œ =====
 //#define _CRT_SECURE_NO_WARNINGS
 //#include <stdio.h>
 //
@@ -243,12 +243,12 @@
 //{
 //	int num, dif, i, x;
 //	
-//	printf("Ã¹ ¹øÂ° Ç× : ");
+//	printf("ì²« ë²ˆì§¸ í•­ : ");
 //	scanf("%d", &num);
 //
 //	int data[10] = { num };
 //
-//	printf("°øÂ÷ : ");
+//	printf("ê³µì°¨ : ");
 //	scanf("%d", &dif);
 //
 //	for (i = 0; i < 9; i++) {
@@ -261,17 +261,17 @@
 
 
 
-// ===== 2¹ø ¿¬½À¹®Á¦ =====
+// ===== 2ë²ˆ ì—°ìŠµë¬¸ì œ =====
 //#define _CRT_SECURE_NO_WARNINGS
 //#include <stdio.h>
 //
 //int main(void)
 //{
 //	int num, dif, i;
-//	printf("Ã¹ ¹øÂ° Ç× : ");
+//	printf("ì²« ë²ˆì§¸ í•­ : ");
 //	scanf("%d", &num);
 //
-//	printf("°øºñ : ");
+//	printf("ê³µë¹„ : ");
 //	scanf("%d", &dif);
 //
 //	int data[10] = { num };
@@ -284,46 +284,114 @@
 
 
 
-// ===== 3¹ø ¿¬½À¹®Á¦ =====
-#define ARR_SIZE 10
-#include <stdio.h>
+// ===== 3ë²ˆ ì—°ìŠµë¬¸ì œ =====
+// #define ARR_SIZE 10
+// #include <stdio.h>
 
-void print_array(int data[], int x)
-{
-	int i, min;
+// void print_array(int data[], int x)
+// {
+// 	int i, min;
 
-	for (i = 0; i < x; i++) {
-		printf("%d ", data[i]);
-	}
+// 	for (i = 0; i < x; i++) {
+// 		printf("%d ", data[i]);
+// 	}
 	
 
-	min = data[x - 1];
-	printf("ÃÖ¼Ò°ª : %d", min);
-	printf("\n");
-}
+// 	min = data[x - 1];
+// 	printf("ìµœì†Œê°’ : %d", min);
+// 	printf("\n");
+// }
 
-int main(void)
-{
-	int data[] = { 23, 45, 62, 12, 99, 83, 23, 50, 72, 37 };
-	int size = sizeof(data) / sizeof(data[0]);
-	int min, temp, i, j;
+// int main(void)
+// {
+// 	int data[] = { 23, 45, 62, 12, 99, 83, 23, 50, 72, 37 };
+// 	int size = sizeof(data) / sizeof(data[0]);
+// 	int min, temp, i, j;
 
-	for (i = 0; i < size-1; i++) {
-		min = i;
-		for (j = i + 1; j < size; j++) {
-			if (data[min] < data[j]) {
-				min = j;
-			}
-		}
-		if (i != min) {
-			temp = data[i];
-			data[i] = data[min];
-			data[min] = temp;
-		}
-		printf("i = %d ÀÏ¶§ Á¤·Ä °á°ú : ", i);
-		print_array(data, size);
-	}
-	printf("ÃÖ¼Ò°ª : %d", data[size - 1]);
+// 	for (i = 0; i < size-1; i++) {
+// 		min = i;
+// 		for (j = i + 1; j < size; j++) {
+// 			if (data[min] < data[j]) {
+// 				min = j;
+// 			}
+// 		}
+// 		if (i != min) {
+// 			temp = data[i];
+// 			data[i] = data[min];
+// 			data[min] = temp;
+// 		}
+// 		printf("i = %d ì¼ë•Œ ì •ë ¬ ê²°ê³¼ : ", i);
+// 		print_array(data, size);
+// 	}
+// 	printf("ìµœì†Œê°’ : %d", data[size - 1]);
 			
 
-}
+// }
+
+
+// ===== 4ë²ˆ ì—°ìŠµë¬¸ì œ =====
+//#define _CRT_SECURE_NO_WARNINGS
+//#define SIZE 10
+//#include <stdio.h>
+//
+//int print_arr(int arr[])
+//{
+//	int i;
+//	for (i = 0; i < SIZE; i++)
+//	{
+//		printf("%d ", arr[i]);
+//	}
+//	printf("\n");
+//	return 1;
+//}
+//
+//int main(void)
+//{
+//	int arr[SIZE] = { 23, 45, 62, 12, 99, 83, 23, 50, 12, 37 };
+//	int i, num, key;
+//
+//	printf("ë°°ì—´ : ");
+//	print_arr(arr);
+//
+//	printf("ì°¾ì„ ê°’ : ");
+//	scanf("%d", &num);
+//
+//	for (i = 1; i <= SIZE; i++) {
+//		if (arr[SIZE-i] == num) {
+//			key = i;
+//		}
+//	}
+//	printf("%dì€(ëŠ”) %dë²ˆì§¸ ì›ì†Œì…ë‹ˆë‹¤", num, key);
+//
+//}
+
+
+
+// ===== 5ë²ˆ ì—°ìŠµë¬¸ì œ =====
+// #include <stdio.h>
+// #define SIZE 10
+
+// float print_arr(float arr[]);
+
+// int main(void)
+// {
+// 	int i;
+// 	float arr[SIZE] = { 1.2, 3.1, 4.3, 4.5, 6.7, 2.3, 8.7, 9.5, 2.3, 5.8 };
+// 	printf("ë°°ì—´ : ");
+// 	print_arr(arr);
+// 	printf("ì—­ìˆœ : ");
+
+// 	for (i = SIZE-1; i >= 0; i--) {
+// 		printf("%1.1f ", arr[i]);
+// 	}
+
+// }
+
+// float print_arr(float arr[])
+// {
+// 	int i;
+// 	for (i = 0; i < SIZE; i++)
+// 		printf("%1.1f ", arr[i]);
+// 	printf("\n");
+// 	return 1;
+// }
