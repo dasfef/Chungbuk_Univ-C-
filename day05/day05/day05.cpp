@@ -50,10 +50,10 @@
 //{
 //	int x = 10;
 //	test1(x);
-//	printf("test1 È£Ãâ ÈÄ x = %d\n", x);
+//	printf("test1 È£ï¿½ï¿½ ï¿½ï¿½ x = %d\n", x);
 //
 //	test2(&x);
-//	printf("test2 È£Ãâ ÈÄ x = %d\n", x);
+//	printf("test2 È£ï¿½ï¿½ ï¿½ï¿½ x = %d\n", x);
 //}
 
 /*
@@ -162,7 +162,7 @@ int main(void)
 
 
 
-// ===== 1¹ø ¿¬½À¹®Á¦ =====
+// ===== 1ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ =====
 //#define _CRT_SECURE_NO_WARNINGS
 //#define SIZE 10
 //#include <stdio.h>
@@ -172,7 +172,7 @@ int main(void)
 //	float data[SIZE] = {};
 //	float* p = &data[0];
 //
-//	printf("½Ç¼ö ÀÔ·Â(10°³) : ");
+//	printf("ï¿½Ç¼ï¿½ ï¿½Ô·ï¿½(10ï¿½ï¿½) : ");
 //	for (i = 0; i < SIZE; i++)
 //		scanf("%f", &data[i]);
 //
@@ -181,7 +181,7 @@ int main(void)
 //}
 
 
-// ===== 2¹ø ¿¬½À¹®Á¦ =====
+// ===== 2ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ =====
 //#include <stdio.h>
 //#define SIZE 3
 //int main(void)
@@ -190,11 +190,11 @@ int main(void)
 //	double x[SIZE] = {};
 //
 //	for (i = 0; i < SIZE; i++)
-//		printf("x[%d]ÀÇ ÁÖ¼Ò : %8p\n", i, &x[i]);
+//		printf("x[%d]ï¿½ï¿½ ï¿½Ö¼ï¿½ : %8p\n", i, &x[i]);
 //}
 
 
-// ===== 3¹ø ¿¬½À¹®Á¦ =====
+// ===== 3ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ =====
 //#define _CRT_SECURE_NO_WARNINGS
 //#include <stdio.h>
 //#define SIZE 10
@@ -208,7 +208,7 @@ int main(void)
 //		printf("%d ", data[i]);
 //	printf("\n");
 //
-//	printf("°è»êÇÒ Á¤¼ö °ª ÀÔ·Â : ");
+//	printf("ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ ï¿½Ô·ï¿½ : ");
 //	scanf("%d", &num);
 //
 //	for (i = 0; i < SIZE; i++, p++) {
@@ -218,7 +218,7 @@ int main(void)
 //}
 
 
-// ===== 4¹ø ¿¬½À¹®Á¦ =====
+// ===== 4ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ =====
 //#define _CRT_SECURE_NO_WARNINGS
 //#include <stdio.h>
 //#define SIZE 5
@@ -230,20 +230,20 @@ int main(void)
 //	float data[SIZE] = {};
 //	float* p = &data[0];
 //
-//	printf("½Ç¼ö 5°³¸¦ ÀÔ·ÂÇÏ¼¼¿ä : ");
+//	printf("ï¿½Ç¼ï¿½ 5ï¿½ï¿½ï¿½ï¿½ ï¿½Ô·ï¿½ï¿½Ï¼ï¿½ï¿½ï¿½ : ");
 //
 //	for (i = 0; i < SIZE; i++)
 //		scanf("%f", &data[i]);
 //
 //	for (i = 0; i < SIZE; i++, p++)
 //		sum += *p;
-//	printf("ÇÕ°è : %f", sum);
+//	printf("ï¿½Õ°ï¿½ : %f", sum);
 //
 //}
 
 
 
-// ===== 5¹ø ¿¬½À¹®Á¦ =====
+// ===== 5ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ =====
 //#include <stdio.h>
 //#define SIZE 10
 //
@@ -254,23 +254,23 @@ int main(void)
 //	int min, max, i;
 //	int data[SIZE] = { 23, 45, 62, 12, 99, 83, 23, 50, 72, 37 };
 //
-//	printf("¹è¿­ : ");
+//	printf("ë°°ì—´ : ");
 //	for (i = 0; i < SIZE; i++) {
 //		printf("%d ", data[i]);
 //	}
 //	printf("\n");
 //	get_min_max(data, &min, &max);
-//	printf("ÃÖ¼Ò°ª : %d\n", min);
-//	printf("ÃÖ´ë°ª : %d", max);
+//	printf("ìµœì†Œê°’ : %d\n", min);
+//	printf("ìµœëŒ€ê°’ : %d", max);
 //}
 //
 //int get_min_max(int data[], int *min, int *max)
 //{
 //	int i, j, temp, index_min, index_max;
 //	for (i = 0; i < SIZE-1; i++) {
-//		index_min = i;
+//		//index_min = i;
 //		for (j = i + 1; j < SIZE; j++) {
-//			if (data[index_min] > data[j])
+//			if (data[i] > data[j])
 //				index_min = j;
 //		}
 //		if (i != index_min) {
@@ -281,9 +281,9 @@ int main(void)
 //		
 //	}*min = data[0];
 //	for (i = 0; i < SIZE-1; i++) {
-//		index_max = i;
+//		//index_max = i;
 //		for (j = i + 1; j < SIZE; j++) {
-//			if (data[index_max] < data[j]) {
+//			if (data[i] < data[j]) {
 //				index_max = j;
 //			}
 //		}
@@ -298,7 +298,7 @@ int main(void)
 //}
 
 
-// ===== 6¹ø ¿¬½À¹®Á¦ =====
+// ===== 6ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ =====
 //#define _CRT_SECURE_NO_WARNINGS
 //#include <stdio.h>
 //
@@ -308,48 +308,347 @@ int main(void)
 //	int* px = &x;
 //	int* py = &y;
 //
-//	printf("°¡·Î ±æÀÌ : ");
+//	printf("ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ : ");
 //	scanf("%d", &x);
 //
-//	printf("¼¼·Î ±æÀÌ : ");
+//	printf("ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ : ");
 //	scanf("%d", &y);
 //
 //	round = (*px * 2) + (*py * 2);
 //	paint = (*px * *py);
-//	printf("µÑ·¹ : %d\n", round);
-//	printf("³ĞÀÌ : %d", paint);
+//	printf("ï¿½Ñ·ï¿½ : %d\n", round);
+//	printf("ï¿½ï¿½ï¿½ï¿½ : %d", paint);
 //}
 
 
-// ===== 7¹ø ¿¬½À¹®Á¦ =====
-#define _CRT_SECURE_NO_WARNINGS
-#define SIZE 5
-#include <stdio.h>
+ // ===== 7ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ =====
+//#define _CRT_SECURE_NO_WARNINGS
+//#define SIZE 5
+//#include <stdio.h>
+//
+//int swap_array(int a[], int b[]);
+//int print_array(int a[], int b[]);
+//int main(void)
+//{
+//	int a[SIZE] = {1, 3, 5, 7, 9};
+//	int b[SIZE] = {0, 2, 4, 6, 8};
+//	int* pa = &a[0];
+//	int* pb = &b[0];
+//	int i;
+//
+//	printf("a ë°°ì—´ : ");
+//	for (i = 0; i < SIZE; i++) {
+//		printf("%d ", a[i]);
+//	}
+//	printf("\n");
+//	printf("b ë°°ì—´ : ");
+//	for (i = 0; i < SIZE; i++) {
+//		printf("%d ", b[i]);
+//	}
+//	printf("\n");
+//	printf("<< swap_array í˜¸ì¶œ í›„ >>\n");
+//	swap_array(&a[0], &b[0]);
+//	print_array(a, b);
+//
+//}
+//
+//int swap_array(int a[], int b[])
+//{
+//	int i, j, index_array, temp;
+//	for (i = 0; i < SIZE - 1; i++) {
+//		temp = a[i];
+//		a[i] = b[i];
+//		b[i] = temp;
+//	}
+//	return 1;
+//}
+//
+//int print_array(int a[], int b[])
+//{
+//	int i;
+//	printf("a ë°°ì—´ : ");
+//	for (i = 0; i < SIZE; i++)
+//		printf("%d ", a[i]);
+//	printf("\n");
+//
+//	printf("b ë°°ì—´ : ");
+//	for (i = 0; i < SIZE; i++)
+//		printf("%d ", b[i]);
+//	return 0;
+//}
 
-int swap_array(int a[], int b[]);
-int main(void)
-{
-	int a[SIZE] = {};
-	int b[SIZE] = {};
-	int i;
 
-	printf("a ¹è¿­ : ");
-	for (i = 0; i < SIZE; i++) {
-		scanf("%d", &a[i]);
-	}
 
-	printf("b ¹è¿­ : ");
-	for (i = 0; i < SIZE; i++) {
-		scanf("%d", &b[i]);
-	}
-	swap_array(a, b);
+// ===== 8ë²ˆ ì—°ìŠµë¬¸ì œ =====
+//#include <stdio.h>
+//#include <stdlib.h>
+//#include <time.h>
+//#define SIZE 10
+//
+//int createRandom(int x[]);
+//int print_array(int x[]);
+//
+//int main(void)
+//{
+//	int random[SIZE] = {};
+//	int* p = &random[0];
+//	srand(time(NULL));
+//
+//	createRandom(p);
+//	print_array(random);
+//
+//}
+//
+//int createRandom(int x[])
+//{
+//	int i;
+//	for (i = 0; i < SIZE; i++) {
+//		x[i] = rand() % 100;
+//	}
+//	return 1;
+//}
+//
+//int print_array(int random[])
+//{
+//	int i;
+//	for (i = 0; i < SIZE; i++)
+//		printf("%d ", random[i]);
+//	return 0;
+//}
 
-}
 
-int swap_array(int a[], int b[])
-{
-	int i;
-	for (i = 0; i < SIZE; i++) {
+// ===== 9ë²ˆ ì—°ìŠµë¬¸ì œ =====
+//#define _CRT_SECURE_NO_WARNINGS
+//#define ROW 3
+//#define COL 5
+//#include <stdio.h>
+//
+//int create_array(int (*arr)[COL], int num);
+//int print_array(int arr[][COL]);
+//
+//int main(void)
+//{
+//	int num;
+//	int arr[ROW][COL] = {};
+//	printf("ë°°ì—´ì˜ ì›ì†Œì— ì €ì¥í•  ê°’ : ");
+//	scanf("%d", &num);
+//	
+//	create_array(&arr[0], num);
+//	print_array(arr);
+//}
+//
+//int create_array(int (*arr)[COL], int num)
+//{
+//	int i, j;
+//	for (i = 0; i < ROW; i++) {
+//		for (j = 0; j < COL; j++) {
+//			arr[i][j] = num;
+//		}
+//	}
+//	return 1;
+//}
+//
+//int print_array(int (*arr)[COL])
+//{
+//	int i, j;
+//	for (i = 0; i < ROW; i++) {
+//		for (j = 0; j < COL; j++) {
+//			printf("%d ", arr[i][j]);
+//		}
+//		printf("\n");
+//	}
+//	return 0;
+//}
 
-	}
-}
+
+// ===== 10ë²ˆ ì—°ìŠµë¬¸ì œ =====
+//#define _CRT_SECURE_NO_WARNINGS
+//#define SIZE 10
+//#include <stdio.h>
+//
+//int calculate(int* x, int start, int num);
+//int print_array(int arr[]);
+//
+//int main(void)
+//{
+//	int start, num;
+//	int arr[SIZE] = {};
+//
+//	printf("ì²« ë²ˆì§¸ í•­ : ");
+//	scanf("%d", &start);
+//	
+//	printf("ê³µì°¨ : ");
+//	scanf("%d", &num);
+//
+//	calculate(&arr[0], start, num);
+//	print_array(arr);
+//}
+//
+//int print_array(int arr[])
+//{
+//	int i;
+//	for (i = 0; i < SIZE; i++)
+//		printf("%d ", arr[i]);
+//	return 0;
+//}
+//
+//int calculate(int* x, int start, int num)
+//{
+//	int i;
+//	x[0] = start;
+//	for (i = 0; i < SIZE; i++) {
+//		x[i + 1] = x[i] + num;
+//	}
+//	return 1;
+//}
+
+
+// ===== 11ë²ˆ ì—°ìŠµë¬¸ì œ =====
+//#include <stdio.h>
+//#define SIZE 10
+//
+//int print_array(int *arr, int size);
+//int swap_array(int *arr, int size);
+//
+//int main(void)
+//{
+//	int arr[SIZE] = { 92, 34, 76, 32, 15, 28, 41, 55, 89, 62 };
+//
+//	print_array(&arr[0], SIZE);
+//	swap_array(&arr[0], SIZE);
+//
+//	print_array(arr, SIZE);
+//}
+//
+//int swap_array(int *arr, int size)
+//{
+//	int i, j, temp, index;
+//	for (i = 0; i < size - 1; i++) {
+//		index = i;
+//		for (j = i + 1; j < size; j++) {
+//			if (arr[index] > arr[j])
+//				index = j;
+//
+//		}
+//		if (i != index) {
+//			temp = arr[i];
+//			arr[i] = arr[index];
+//			arr[index] = temp;
+//		}
+//	}
+//	return 0;
+//}
+//
+//int print_array(int *arr, int size)
+//{
+//	int i;
+//	for (i = 0; i < size; i++)
+//		printf("%d ", arr[i]);
+//	printf("\n");
+//	return 1;
+//}
+
+
+
+// ===== 12ë²ˆ ì—°ìŠµë¬¸ì œ =====
+//#define _CRT_SECURE_NO_WARNINGS
+//#include <stdio.h>
+//#define SIZE 10
+//
+//int print_array(int data[]);
+//int key_array(int data[],int *index, int num);
+//int main(void)
+//{
+//	int data[SIZE] = { 12, 45, 62, 12, 99, 83, 23, 12, 72, 37 };
+//	int index[SIZE] = {};
+//	int i, num, cnt;
+//	print_array(data);
+//	printf("ì°¾ì„ ê°’ : ");
+//	scanf("%d", &num);
+//	
+//	cnt = key_array(&data[0], index, num);
+//	
+//	printf("ì°¾ì€ í•­ëª©ì€ ëª¨ë‘ %dê°œ ì…ë‹ˆë‹¤\n", cnt);
+//	printf("ì°¾ì€ í•­ëª©ì˜ ì¸ë±ìŠ¤ : ");
+//
+//	if (cnt > 0) {
+//		for (i = 0; i < cnt; i++) {
+//			printf("%d ", index[i]);
+//		}
+//	}
+//	else
+//		printf("ì°¾ëŠ” ê°’ì´ ì—†ìŠµë‹ˆë‹¤");
+//}
+//
+//int print_array(int data[])
+//{
+//	int i;
+//	for (i = 0; i < SIZE; i++) {
+//		printf("%d ", data[i]);
+//	}
+//	printf("\n");
+//	return 1;
+//}
+//
+//int key_array(int data[], int *index, int num)
+//{
+//	int i;
+//	int cnt = 0;
+//	for (i = 0; i < SIZE; i++){
+//		if (data[i] == num) {
+//			index[cnt] = i;
+//			cnt += 1;
+//		}
+//	}
+//
+//	return cnt;
+//}
+
+
+//#define SIZE 5
+//#include <stdio.h>
+
+//int main(void)
+//{
+//	int data[5] = { 1, 2, 3, 4, 5 };
+//	int* p = &data[0];
+//
+//	printf("%p\n", *p);
+//	printf("%p\n", &data);
+//	printf("%d\n", *p);
+//	printf("%d", &data);
+//}
+
+
+//int main(void)
+//{
+//	int data[5] = { 1, 3, 5, 7, 9 };
+//	int* p = &data[0];
+//
+//	printf("%d\n", *p + 1);
+//	printf("%d\n", *(p + 1));
+//	printf("%d\n", (*p + 1) + 2);
+//	printf("%d", *(p)+1);
+//}
+
+
+//int swap(int *arr)
+//{
+//	int temp;
+//	temp = arr[0];
+//	arr[0] = arr[1];
+//	arr[1] = temp;
+//
+//	return 1;
+//}
+//
+//int main(void)
+//{
+//	int i;
+//	int data[SIZE] = { 1, 3, 5, 7, 9 };
+//	swap(&data[0]);
+//
+//	for (i = 0; i < SIZE; i++)
+//		printf("%d ", data[i]);
+//}
+
