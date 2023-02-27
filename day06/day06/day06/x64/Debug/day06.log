@@ -1,0 +1,3 @@
+﻿  day06_practice.cpp
+day06_practice.obj : error LNK2005: main이(가) day06.obj에 이미 정의되어 있습니다.
+C:\Users\User\Desktop\Cwork\day06\day06\x64\Debug\day06.exe : fatal error LNK1169: 여러 번 정의된 기호가 있습니다.
