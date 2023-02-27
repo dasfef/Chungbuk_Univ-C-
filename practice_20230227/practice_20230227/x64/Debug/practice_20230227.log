@@ -1,0 +1,4 @@
+﻿  practice_20230227.cpp
+C:\Users\User\Desktop\Cwork\practice_20230227\practice_20230227\practice_20230227.cpp(52,26): warning C4267: '=': 'size_t'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\User\Desktop\Cwork\practice_20230227\practice_20230227\practice_20230227.cpp(53,26): warning C4267: '=': 'size_t'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  practice_20230227.vcxproj -> C:\Users\User\Desktop\Cwork\practice_20230227\x64\Debug\practice_20230227.exe
