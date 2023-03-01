@@ -1,0 +1,60 @@
+// ▣ 함수 1)
+#define _CRT_SECURE_NO_WARNINGS
+#include <stdio.h>
+
+
+void tocenti(double i)
+{
+	double centi;
+
+	centi = i * 2.5399;
+	printf("%.0f 인치(inch) 는 %.2f 센티미터(cm)\n", i, centi);
+	printf("성공적으로 환산을 수행하였습니다\n");
+}
+
+void tometer(double m)
+{
+	double meter;
+	meter = m * 3.3058;
+	printf("%.0f 평은 %.2f 평방미터\n", m, meter);
+	printf("성공적으로 환산을 수행하였습니다\n");
+}
+
+int main(void)
+{
+	double inch, meter;
+	char choice;
+
+	do {
+		printf("프로그램 선택(A,B,Q) : ");
+		scanf("%s", &choice);
+		getchar();
+
+		switch (choice) {
+		case 'a': case 'A':
+			printf("A. 인치를 센티미터로 환산하는 프로그램\n");
+			printf("인치(inch)를 입력하세요 : ");
+			scanf("%lf", &inch);
+			tocenti(inch);
+			break;
+
+		case 'b': case 'B' :
+			printf("B. 평을 평방미터로 환산하는 프로그램\n");
+			printf("평을 입력하세요 : ");
+			scanf("%lf", &meter);
+			tometer(meter);
+			break;
+
+		case 'q': case'Q':
+			printf("프로그램을 종료합니다");
+			return 0;
+			break;
+
+		default:
+			printf("정확하지 않은 선택입니다\n");
+			printf("다시 선택해주세요\n");
+			continue;
+			break;
+		}
+	} while (1);
+}
