@@ -61,174 +61,224 @@
 
 
 // ▣ 함수 2)
+//#define _CRT_SECURE_NO_WARNINGS
+//#include <stdio.h>
+//
+//void student_info()
+//{
+//	int i, j;
+//	char choice_1;
+//	char school[3][20], sNumber[3][20], name[3][20];
+//
+//	while (1) {
+//		for (i = 0; i < 3; i++) {
+//			printf("===== 학생 %d의 정보 입력 =====\n", i + 1);
+//			printf("학교 : ");
+//			scanf("%s", &school[i]);
+//			printf("학번 : ");
+//			scanf("%s", &sNumber[i]);
+//			printf("이름 : ");
+//			scanf("%s", &name[i]);
+//		}
+//
+//		for (i = 0; i < 3; i++) {
+//			printf("===== 학생 %d의 정보 출력 =====\n", i + 1);
+//			printf("① 학교 : %s\n", school[i]);
+//			printf("② 학번 : %s\n", sNumber[i]);
+//			printf("③ 이름 : %s\n", name[i]);
+//		}
+//
+//		printf("프로그램 수행 성공!\n");
+//	redo:
+//		printf("프로그램을 다시 실행하겠습니까? (Y/N) : ");
+//		scanf(" %c", &choice_1);
+//		getchar();
+//
+//		switch (choice_1) {
+//		case 'Y': case 'y':
+//			continue;
+//			break;
+//
+//		case 'N': case 'n':
+//			printf("프로그램 1 수행 후 종료\n");
+//			break;
+//
+//		default:
+//			printf("대소문자 구분 없이 Y 또는 N 만 허용됩니다\n");
+//			goto redo;
+//			break;
+//		}
+//	}
+//}
+//
+//void do_multiple()
+//{
+//	int i, j, choice;
+//	char choice2;
+//
+//	while (1) {
+//	play:
+//		printf("출력할 단 입력 : ");
+//		scanf("%d", &choice);
+//
+//		printf("===== %d 단 =====\n", choice);
+//		for (i = 1; i < 10; i++) {
+//			printf("%d x %d = %d\n", choice, i, choice * i);
+//		}
+//		printf("\n");
+//
+//		printf("프로그램 수행 성공!\n");
+//	redo:
+//		printf("프로그램을 다시 실행하겠습니까? (Y/N) : ");
+//		scanf(" %c", &choice2);
+//
+//		switch (choice2) {
+//		case 'Y': case 'y':
+//			goto play;
+//			break;
+//
+//		case 'N': case 'n':
+//			printf("프로그램 2 수행 후 종료\n");
+//			break;
+//
+//		default:
+//			printf("대소문자 구분 없이 Y 또는 N 만 허용됩니다\n");
+//			goto redo;
+//			break;
+//		}
+//		break;
+//	}
+//	return;
+//}
+//
+//void get_sum()
+//{
+//	int i;
+//	int num;
+//	int sum = 0;
+//	char choice2;
+//
+//	while (1) {
+//	play:
+//		printf("누적 합계 구할 숫자 : ");
+//		scanf("%d", &num);
+//
+//		for (i = 1; i <= num; i++) {
+//			sum += i;
+//		}
+//		printf("1부터 %d까지 누적 합계 : %d\n", num, sum);
+//
+//		printf("프로그램 수행 성공!\n");
+//	redo:
+//		printf("프로그램을 다시 실행하겠습니까? (Y/N) : ");
+//		scanf(" %c", &choice2);
+//
+//		switch (choice2) {
+//		case 'Y': case 'y':
+//			goto play;
+//			break;
+//
+//		case 'N': case 'n':
+//			printf("프로그램 3 수행 후 종료\n");
+//			break;
+//
+//		default:
+//			printf("대소문자 구분 없이 Y 또는 N 만 허용됩니다\n");
+//			goto redo;
+//			break;
+//		}
+//		break;
+//	}
+//	return;
+//}
+//
+//int main(void)
+//{
+//	int choice;
+//	int cnt = 0;
+//
+//	do {
+//		printf("1. 학생 3명의 정보 입출력 프로그램\n");
+//		printf("2. 입력한 숫자의 구구단 출력 프로그램\n");
+//		printf("3. 1부터 입력한 숫자까지 누적 합계 출력 프로그램\n");
+//		printf("프로그램을 선택하세요(1-4) : ");
+//		scanf("%d", &choice);
+//		getchar();
+//
+//		switch (choice) {
+//		case 1:
+//			cnt++;
+//			printf("=== 1. 학생 3명의 정보 입출력 프로그램 ===\n");
+//			student_info();
+//			break;
+//		case 2:
+//			printf("=== 2. 입력한 숫자의 구구단 출력 프로그램 ===\n");
+//			do_multiple();
+//			break;
+//
+//		case 3:
+//			printf("=== 3. 1부터 입력한 숫자까지 누적 합계 출석 프로그램 ===\n");
+//			get_sum();
+//			break;
+//
+//		case 4:
+//			printf("=== 4. 프로그램을 종료합니다 ===\n");
+//			return 0;
+//			break;
+//
+//		default:
+//			continue;
+//		}
+//
+//	} while (1);
+//}
+
+
+// ▣ 함수 3)
 #define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
 
-void student_info()
+int change = 0;
+
+int program(int cnt, int cash, int i)
 {
-	int i, j;
-	char choice_1;
-	char school[3][20], sNumber[3][20], name[3][20];
+	start:
+	printf("입출금 횟수 지정 (1~10) : ");
+	scanf("%d", &cnt);
 
-	while (1) {
-		for (i = 0; i < 3; i++) {
-			printf("===== 학생 %d의 정보 입력 =====\n", i + 1);
-			printf("학교 : ");
-			scanf("%s", &school[i]);
-			printf("학번 : ");
-			scanf("%s", &sNumber[i]);
-			printf("이름 : ");
-			scanf("%s", &name[i]);
-		}
-
-		for (i = 0; i < 3; i++) {
-			printf("===== 학생 %d의 정보 출력 =====\n", i + 1);
-			printf("① 학교 : %s\n", school[i]);
-			printf("② 학번 : %s\n", sNumber[i]);
-			printf("③ 이름 : %s\n", name[i]);
-		}
-
-		printf("프로그램 수행 성공!\n");
-	redo:
-		printf("프로그램을 다시 실행하겠습니까? (Y/N) : ");
-		scanf(" %c", &choice_1);
-		getchar();
-
-		switch (choice_1) {
-		case 'Y': case 'y':
-			continue;
-			break;
-
-		case 'N': case 'n':
-			printf("프로그램 1 수행 후 종료\n");
-			break;
-
-		default:
-			printf("대소문자 구분 없이 Y 또는 N 만 허용됩니다\n");
-			goto redo;
-			break;
+	if ((cnt > 10) || (cnt < 1)) {
+		printf("허용 범위가 아닙니다\n");
+		printf("다시 입력하세요\n");
+		goto start;
+	}
+	else {
+		for (i = 1; i <= cnt; i++) {
+			if ((i > 0) || (i <= cnt)) {
+				printf("< %d 회 실행 >\n", i);
+				printf("현금 : ");
+				scanf("%d", &cash);
+				printf("입금\t출금\t잔액\n");
+				if (cash > 0) {
+					printf("%d\t\t%d\n", cash, change += cash);
+				}
+				else if(cash < 0){
+					printf("\t%d\t%d\n", cash, change += cash);
+				}
+			}
 		}
 	}
-}
 
-void do_multiple()
-{
-	int i, j, choice;
-	char choice2;
-
-	while (1) {
-	play:
-		printf("출력할 단 입력 : ");
-		scanf("%d", &choice);
-
-		printf("===== %d 단 =====\n", choice);
-		for (i = 1; i < 10; i++) {
-			printf("%d x %d = %d\n", choice, i, choice * i);
-		}
-		printf("\n");
-
-		printf("프로그램 수행 성공!\n");
-	redo:
-		printf("프로그램을 다시 실행하겠습니까? (Y/N) : ");
-		scanf(" %c", &choice2);
-
-		switch (choice2) {
-		case 'Y': case 'y':
-			goto play;
-			break;
-
-		case 'N': case 'n':
-			printf("프로그램 2 수행 후 종료\n");
-			break;
-
-		default:
-			printf("대소문자 구분 없이 Y 또는 N 만 허용됩니다\n");
-			goto redo;
-			break;
-		}
-		break;
-	}
-	return;
-}
-
-void get_sum()
-{
-	int i;
-	int num;
-	int sum = 0;
-	char choice2;
-
-	while (1) {
-	play:
-		printf("누적 합계 구할 숫자 : ");
-		scanf("%d", &num);
-
-		for (i = 1; i <= num; i++) {
-			sum += i;
-		}
-		printf("1부터 %d까지 누적 합계 : %d\n", num, sum);
-
-		printf("프로그램 수행 성공!\n");
-	redo:
-		printf("프로그램을 다시 실행하겠습니까? (Y/N) : ");
-		scanf(" %c", &choice2);
-
-		switch (choice2) {
-		case 'Y': case 'y':
-			goto play;
-			break;
-
-		case 'N': case 'n':
-			printf("프로그램 3 수행 후 종료\n");
-			break;
-
-		default:
-			printf("대소문자 구분 없이 Y 또는 N 만 허용됩니다\n");
-			goto redo;
-			break;
-		}
-		break;
-	}
-	return;
+	printf("총 %d회 실행 후 프로그램 종료", cnt);
+	return 0;
 }
 
 int main(void)
 {
-	int choice;
 	int cnt = 0;
+	int cash = 0;
+	int i = 1;
 
-	do {
-		printf("1. 학생 3명의 정보 입출력 프로그램\n");
-		printf("2. 입력한 숫자의 구구단 출력 프로그램\n");
-		printf("3. 1부터 입력한 숫자까지 누적 합계 출력 프로그램\n");
-		printf("프로그램을 선택하세요(1-4) : ");
-		scanf("%d", &choice);
-		getchar();
-
-		switch (choice) {
-		case 1:
-			cnt++;
-			printf("=== 1. 학생 3명의 정보 입출력 프로그램 ===\n");
-			student_info();
-			break;
-		case 2:
-			printf("=== 2. 입력한 숫자의 구구단 출력 프로그램 ===\n");
-			do_multiple();
-			break;
-
-		case 3:
-			printf("=== 3. 1부터 입력한 숫자까지 누적 합계 출석 프로그램 ===\n");
-			get_sum();
-			break;
-
-		case 4:
-			printf("=== 4. 프로그램을 종료합니다 ===\n");
-			return 0;
-			break;
-
-		default:
-			continue;
-		}
-
-	} while (1);
+	printf("▣ 가계부 프로그램");
+	program(cnt, cash, i);
+	
 }
